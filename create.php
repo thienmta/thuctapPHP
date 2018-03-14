@@ -1,7 +1,7 @@
 <?php
 	$servername = "thuctapphp.com";
  	$username = "root"; 
-	$password = "1"; 
+	$password = "123456"; 
 	$dbname = "thuctapPHP";
 
 	$conn = mysqli_connect($servername,$username,$password,$dbname);
@@ -21,7 +21,7 @@
 			//mysqli_query($conn, $query);
 			if($conn->query($query) === true)
 			{
-				header('Location: http://thuctapphp.com/');
+				header('Location: http://thuctapphp.com/thuctapPHP/list.php');
 			}
 			else
 			{
