@@ -1,18 +1,11 @@
 <?php
-	function deleteStudent($id){
-		$sql = mysqli_query("UPDATE  student  SET studentStatus='0' WHERE studentId='$id'");
-		return $sql;
+	$conn = mysqli_connect("thuctapphp.com", "root", "123456", "thuctapPHP");
+	if(isset($_GET['id'])){
+		$id =$_GET['id'];
+		$sql = "UPDATE student SET studentStatus=0 WHERE studentId='$id'";
+		mysqli_query($sql);
+		header("location:list.php");
 	}
+
 ?>
-<script language="javascript">
-    	function load_ajax(){
-    		var agrs = {
-    			url : "delete.php";
-    			type  :  "post";
-    			dataType : "text";
-    			data : {
-    				id : $id 
-    			}
-    		}
-    	}
-</script>
+
