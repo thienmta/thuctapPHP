@@ -5,7 +5,8 @@
 	    	echo "Connect Failed!". mysqli_connect_error($conn);
 	    }
 	    	echo "Successsful";
-	    	echo "ha cho";
+	    	//echo "ha cho";
+		echo "dm con cho thien";
 
 ?>
 <html>
