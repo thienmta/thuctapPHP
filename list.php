@@ -5,8 +5,9 @@
 	    	echo "Connect Failed!". mysqli_connect_error($conn);
 	    }
 	    	echo "Successsful";
-	    	
+
 		echo "thien sua";
+
 
 
 ?>
