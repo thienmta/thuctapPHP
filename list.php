@@ -1,12 +1,9 @@
 <?php
-	$conn = mysqli_connect("thuctapphp.com", "root", "1", "thuctapPHP");
+	$conn = mysqli_connect("thuctapphp.com", "root", "123456", "thuctapPHP");
 	    if(!$conn)
 	    {
 	    	echo "Connect Failed!". mysqli_connect_error($conn);
 	    }
-
-
-		echo "thien mta";
 
 
 
@@ -15,6 +12,7 @@
 <html>
 <head></head>
 <body>
+	<a href="createStudent.html" "email me">Add</a>
 	<table border="1px">
 		<tr>
 			<th>ID</th>
