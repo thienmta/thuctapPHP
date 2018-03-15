@@ -23,7 +23,7 @@
 			<th>Action</th>
 		</tr>
 		<?php
-				$sql="SELECT * FROM student WHERE studenStatus = 1";
+				$sql="SELECT * FROM student WHERE studentStatus = 1";
 				$result=mysqli_query($conn,$sql);
 				if(mysqli_num_rows($result) > 0){
 				while($row=mysqli_fetch_assoc($result)){
