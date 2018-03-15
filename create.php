@@ -1,7 +1,7 @@
 <?php
 	$servername = "thuctapphp.com";
  	$username = "root"; 
-	$password = "123456"; 
+	$password = "1"; 
 	$dbname = "thuctapPHP";
 
 	$conn = mysqli_connect($servername,$username,$password,$dbname);
@@ -20,7 +20,7 @@
 			$query = " INSERT INTO student(studentName, studentStatus) values ('$name', $status)";
 			if($conn->query($query) === true)
 			{
-				header('Location: http://thuctapphp.com/thuctapPHP/list.php');
+				header('Location: http://thuctapphp.com/list.php');
 			}
 			else
 			{

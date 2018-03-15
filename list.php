@@ -1,5 +1,5 @@
 <?php
-	$conn = mysqli_connect("thuctapphp.com", "root", "123456", "thuctapPHP");
+	$conn = mysqli_connect("thuctapphp.com", "root", "1", "thuctapPHP");
 	    if(!$conn)
 	    {
 	    	echo "Connect Failed!". mysqli_connect_error($conn);
@@ -22,7 +22,7 @@
 			<th>Action</th>
 		</tr>
 		<?php
-				$sql="SELECT * FROM student WHERE studenStatus = 1";
+				$sql="SELECT * FROM student WHERE studentStatus = 1";
 				$result=mysqli_query($conn,$sql);
 				if(mysqli_num_rows($result) > 0){
 				while($row=mysqli_fetch_assoc($result)){
