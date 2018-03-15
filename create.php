@@ -18,7 +18,6 @@
 			$name = $_POST['name'];
 			$status = $_POST['status'];
 			$query = " INSERT INTO student(studentName, studentStatus) values ('$name', $status)";
-			//mysqli_query($conn, $query);
 			if($conn->query($query) === true)
 			{
 				header('Location: http://thuctapphp.com/');
